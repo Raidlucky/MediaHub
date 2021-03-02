@@ -3,6 +3,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: arial;
+    background-color: var(--gunmetal);
 }
 
 :root {
@@ -18,6 +19,7 @@ nav {
     height: 50px;
     display: inline-block;
     background-color: var(--dark-jungle-green);
+    position: fixed;
 }
 
 input[type="search"]::-webkit-search-decoration,
@@ -189,7 +191,7 @@ background-color: darkslategrey;
     margin-left: auto;
     margin-right: auto;
     padding-left: 235px;
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
 .video {
@@ -211,6 +213,12 @@ border-radius: 4px;
     color: white;
     display: block;
     margin-left: 5px;
+}
+
+.video-option {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 /* Icons */
@@ -240,4 +248,8 @@ margin-left: 7px;
 
 i.fas.fa-bookmark {
 margin-left: 7px;
+}
+
+i.fas.fa-ellipsis-v {
+    color: white;
 }
