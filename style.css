@@ -226,6 +226,7 @@ background-color: var(--lapis-lazuli);
     margin-right: auto;
     padding-left: 235px;
     margin-bottom: 45px;
+    height: 320px;
 }
 
 .video {
