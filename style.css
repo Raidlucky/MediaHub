@@ -1,3 +1,5 @@
+@import url('Roboto');
+
 :root {
 --timberwolf: #daddd8ff;
 --blue-sapphire: #0b4f6cff;
@@ -10,7 +12,7 @@ body {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: arial;
+    font-family: "Roboto", Arial, sans-serif;
     background-color: #181818;
     overflow-x: hidden;
 }
@@ -162,7 +164,7 @@ background-color: var(--lapis-lazuli);
 .creator {
     margin-top: 10px;
     border-radius: 50%;
-    width: 50px;
+    width: 40px;
     display: inline-block;
     vertical-align: middle;
     margin-bottom: 10px;
@@ -174,7 +176,7 @@ background-color: var(--lapis-lazuli);
     vertical-align: middle;
     display: inline-block;
     padding-top: 10px;
-    font-size: 19px;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -207,19 +209,6 @@ background-color: var(--lapis-lazuli);
     height: 320px;
 }
 
-.video-row:hover > .video {
-    margin-bottom: 40px;
-}
-
-.video:hover > .video-date {
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 0.3s;
-    animation: fadeIn ease 3.9s;
-    -webkit-animation: fadeIn ease 3.9s;
-}
-
-
 .last-video-row {
     display: flex;
     margin-left: auto;
@@ -251,6 +240,7 @@ margin-bottom: 0px;
     display: inline-block;
     vertical-align: middle;
     width: 250px;
+    font-weight: 200px;
 }
 
 .video-description {
@@ -259,8 +249,17 @@ margin-bottom: 0px;
     margin-left: 5px;
     font-size: 14px;
     font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
+.video-views {
+    color: #8a8989;
+    display: inline-block;
+    margin: 0px;
+}
+
+/* Define FadeIn */
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
@@ -289,16 +288,22 @@ margin-bottom: 0px;
 
 .video-date {
     color: #8a8989;
-    visibility: hidden;
-    opacity: 0.0;
     font-size: 15px;
     font-weight: 500;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 1px;
 }
 
 .video-option {
     float: right;
     margin-right: 10px;
     margin-top: 22px;
+    cursor: pointer;
+}
+
+.video-option:hover {
+    color: #8e8e8e;
 }
 
 /* Icons */
