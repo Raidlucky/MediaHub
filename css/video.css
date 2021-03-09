@@ -196,17 +196,49 @@
     display: block;
 }
 
-video {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    outline: none;
+.container {
+    display: flex;
+    background: #fff0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-#video-controls {
-    display: inline-block;
+.video {
     width: 100%;
+}
+
+.c-video {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+
+.controls {
+    display: flex;
+    position: absolute;
     bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.buttons button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.buttons button:before {
+content: "\f144";
+font-family: 'Font Awesome 5 Free';
+width: 30px;
+height: 30px;
+display: inline-block;
+font-size: 28px;
+color: #ffff;
+-webkit-font-smoothing: antialiased;
 }
 
     /* Icons */
